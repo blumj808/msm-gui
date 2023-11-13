@@ -23,6 +23,7 @@ class MoviesController < ApplicationController
     redirect_to("/movies/#{the_movie.id}")
   end
 
+
   def create
     # params hash looks like this:
     # {"the_title"=>"1", "the_year"=>"2", "the_duration"=>"3", "the_description"=>"4", "the_image"=>"5", "the_director_id"=>"6"}
@@ -35,7 +36,6 @@ class MoviesController < ApplicationController
     m.director_id = params.fetch("the_director_id")
     m.save
     redirect_to("/movies")
-
     # Retrieve the user's inputs from params
     # Create a record in the movie table
     # Populate each column with the user input
