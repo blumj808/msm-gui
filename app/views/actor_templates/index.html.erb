@@ -6,38 +6,49 @@
     Create actor
   </button>
 </form>
-<form action="/insert_movie_record" method="post">
-  <div>
-    <label for="title_field">Title</label>
-    <input id="title_field" type="text" name="the_title">
-  </div>
-
-  <div>
-    <label for="year_field">Year</label>
-    <input id="year_field" type="text" name="the_year">
-  </div>
-
-  <div>
-    <label for="duration_field">Duration</label>
-    <input id="duration_field" type="text" name="the_duration">
-  </div>
-
-  <div>
-    <label for="description_field">Description</label>
-    <input id="description_field" type="text" name="the_description">
-  </div>
-
-  <div>
-    <label for="image_field">Image</label>
-    <input id="image_field" type="text" name="the_image">
-  </div>
-
-  <div>
-    <label for="director_id_field">Director ID</label>
-    <input id="director_id_field" type="text" name="the_director_id">
-  </div>
 
 <hr>
+
+<form action="/insert_actor" method="post">
+  <div>
+    <label for="name_box">
+      Name
+    </label>
+
+    <input type="text" id="name_box" name="query_name">
+  </div>
+
+  <div>
+    <label for="dob_box">
+      Dob
+    </label>
+
+    <input type="date" id="dob_box" name="query_dob">
+  </div>
+
+  <div>
+    <label for="bio_box">
+      Bio
+    </label>
+
+    <textarea id="bio_box" name="query_bio" rows="3"></textarea>
+  </div>
+
+  <div>
+    <label for="image_box">
+      Image
+    </label>
+
+    <input type="text" id="image_box" name="query_image">
+  </div>
+
+  <button>
+    Create actor
+  </button>
+</form>
+
+<hr>
+
 
 <table border="1">
   <tr>
