@@ -12,13 +12,13 @@
 
 <form action="/modify_actor_record/<%= @the_actor.id %>" method="post">
   <div>
-    <label for="title_field">Title</label>
-    <input id="title_field" type="text" name="the_title" value="<%= @the_actor.name %>">
+    <label for="name_field">Name</label>
+    <input id="name_field" type="text" name="the_name" value="<%= @the_actor.name %>">
   </div>
 
   <div>
-    <label for="Dob">Year</label>
-    <input id="dob" type="text" name="dob" value="<%= @the_actor.dob %>">
+    <label for="Dob">Dob</label>
+    <input id="Dob" type="text" name="dob" value="<%= @the_actor.dob %>">
   </div>
 
   <div>
@@ -28,7 +28,7 @@
 
   <div>
     <label for="actor_id_field">Actor ID</label>
-    <input id="actor_id_field" type="text" name="actor_id" value="<%= @actor_id_field %>">
+    <input id="actor_id_field" type="text" name="actor_id" value="<%=@the_actor.id %>">
   </div>
 
   <button>
