@@ -66,7 +66,7 @@ class DirectorsController < ApplicationController
     director_id = params.fetch("director_id")
 
     # Look up the existing record
-    matching_records = Director.where({ :id => m_id })
+    matching_records = Director.where({ :id => director_id })
     the_director = matching_records.at(0)
 
     # Overwrite each column with the values from user inputs
