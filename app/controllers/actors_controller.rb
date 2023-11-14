@@ -48,17 +48,16 @@ class ActorsController < ApplicationController
     the_actor = matching_records.at(0)
 
     # Overwrite each column with the values from user inputs
-    m.name = params.fetch("the_name")
-    m.dob = params.fetch("dob")
-    m.bio = params.fetch("the_bio")
-    m.image = params.fetch("the_image")
-    m.save
+    the_actor.name = params.fetch("the_name")
+    the_actor.dob = params.fetch("dob")
+    the_actor.image = params.fetch("the_image")
+    the_actor.save
     # Save
 
-    the_movie.save
+    the_actor.save
 
     # Redirect to the movie details page
-    redirect_to("/actors/#{the_movie.id}")
+    redirect_to("/actors/#{the_actor.id}")
   end
 
 end
